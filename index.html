@@ -90,7 +90,7 @@
 									<h3 class="panel-title">JS</h3>
 								</div>
 								<div class="panel-body">
-									<pre>$('.form-horizontal').validation();</pre>
+									<pre>$('#basis-form').validation();</pre>
 								</div>
 							</div>
 
@@ -287,25 +287,28 @@ $('#expand-form').validation({
 									<h3 class="panel-title">Html</h3>
 								</div>
 								<div class="panel-body">
-									<textarea class="form-control" rows="20">
-&lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot;&gt;
-	&lt;div class=&quot;form-group&quot;&gt;
-		&lt;label class=&quot;col-sm-2 control-label&quot;&gt;Email&lt;/label&gt;
-		&lt;div class=&quot;col-sm-10&quot;&gt;
-			&lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Input Email&quot; data-type=&#x27;email&#x27;&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;form-group&quot;&gt;
-		&lt;label class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;
-		&lt;div class=&quot;col-sm-10&quot;&gt;
-			&lt;input type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Input Password&quot; data-type=&#x27;password&#x27;&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;form-group&quot;&gt;
-		&lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
-			&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
+									<textarea class="form-control" rows="23">
+										
+&lt;form class=&quot;form-horizontal&quot; role=&quot;form&quot; id=&quot;regular-form&quot;&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Id Card&lt;/label&gt;
+    &lt;div class=&quot;col-sm-10&quot;&gt;
+      &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Input Id Card&quot; data-type=&#x27;reg&#x27; data-reg=&#x27;/^(^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$)|(^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])((\d{4})|\d{3}[Xx])$)$/&#x27;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Zip code&lt;/label&gt;
+    &lt;div class=&quot;col-sm-10&quot;&gt;
+      &lt;input type=&quot;email&quot; class=&quot;form-control&quot; placeholder=&quot;Input Zip code&quot; data-type=&#x27;zip&#x27;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;
+    &lt;div class=&quot;col-sm-10&quot;&gt;
+      &lt;input type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Input Password&quot; data-type=&#x27;password&#x27;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
+      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/form&gt;
 										</textarea>
 								</div>
