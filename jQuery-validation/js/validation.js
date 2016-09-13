@@ -111,22 +111,20 @@ $.fn.validation = function(options) {
 			if(!type) {
 				return true;
 			}
-			var defultValue = $(input).data("default") ? $(input).data(
-				"default") : this.rules[type].defaultValue; // 默认值
-			var errorMsg = $(input).data("error") ? $(input).data("error") :
-				this.rules[type].errorMsg; // 错误信息
+			var defultValue = $(input).data("default") || (this.rules[type] && this.rules[type].defaultValue); // 默认值
+			var errorMsg = $(input).data("error") || (this.rules[type] && this.rules[type].errorMsg) || $(input).attr('placeholder') ; // 错误信息
 			var reg_ = type == "reg" ? eval($(input).data("reg")) : /^$/; // 正则
-			var check_result = type != "reg" ? this.rules[type]
-				.validate(value) : reg_.test(value);
+			var check_result = type != "reg" ? this.rules[type].validate(value) : reg_.test(value);
 			// 提供回调处理验证结果的提示方式 详见demo
 			callback(check_result, input, errorMsg, defultValue);
 			return check_result;
 		},
 		addRule: function(name, value) {
-			this.rules[name] = value;
+			df.rules[name] = value;
 		}
 	}
 	$.extend(df, options); //传入参数合并进来
+	options && options.addOnRules && $.extend(df.rules, options.addOnRules); //规则也扩展进来
 	var waiteToVal = $(this).find('input,select').andSelf(); //选中对象
 	if(!waiteToVal.length) {
 		console && console.warn("Nothing selected, can't validate, returning nothing.");
