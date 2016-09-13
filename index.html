@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Jquery-validation by Kerbores</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Jquery-validation by Kerbores</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 		<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 		<style>
-			.page-header{
-				margin:0;
+			.page-header {
+				margin: 0;
 			}
+			
 			.tab-content>.active {
 				padding-top: 15px;
 			}
@@ -23,17 +25,18 @@
       <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Jquery-validation</h1>
-      <h2 class="project-tagline">jQuery-validation</h2>
-      <a href="https://github.com/Kerbores/jQuery-validation" class="btn">View on GitHub</a>
-      <a href="https://github.com/Kerbores/jQuery-validation/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/Kerbores/jQuery-validation/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+	</head>
 
-    <div class="container">
+	<body>
+		<section class="page-header">
+			<h1 class="project-name">Jquery-validation</h1>
+			<h2 class="project-tagline">jQuery-validation</h2>
+			<a href="https://github.com/Kerbores/jQuery-validation" class="btn">View on GitHub</a>
+			<a href="https://github.com/Kerbores/jQuery-validation/zipball/master" class="btn">Download .zip</a>
+			<a href="https://github.com/Kerbores/jQuery-validation/tarball/master" class="btn">Download .tar.gz</a>
+		</section>
+
+		<div class="container">
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
 					<h3> Examples </h3>
@@ -362,10 +365,10 @@ $('#regular-form').validation({
 			</div>
 		</div>
 
-  <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+		<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/layer/2.3/layer.js"></script>
+		<script type="text/javascript" src="layer/layer.js"></script>
 		<script type="text/javascript" src="js/validation.js"></script>
 		<script type="text/javascript">
 			$(function() {
@@ -392,8 +395,8 @@ $('#regular-form').validation({
 								validate: function(value) {
 									return /^[1-9]\d{5}(?!\d)$/.test(value);
 								},
-								errorMsg: 'Input Zip code', 
-								defaultValue: '400000' 
+								errorMsg: 'Input Zip code',
+								defaultValue: '400000'
 							}
 						}
 					})
@@ -406,5 +409,6 @@ $('#regular-form').validation({
 				});
 			})
 		</script>
-  </body>
+	</body>
+
 </html>
