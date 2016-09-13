@@ -345,7 +345,13 @@ $('#expand-form').validation({
 										<h3 class="panel-title">JS</h3>
 									</div>
 									<div class="panel-body">
-										<code>$('.form-horizontal').validation();</code>
+										<pre>
+$('#regular-form').validation({
+	validationcallBack: function(status, dom, errorMsg, defaultValue) {
+		status || layer.tips(errorMsg, dom);
+	}
+})
+										</pre>
 									</div>
 								</div>
 
